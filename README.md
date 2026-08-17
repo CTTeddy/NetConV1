@@ -11,7 +11,7 @@
 - [Installation Guide](#-installation-guide)
 - [Initialization & Usage](#-initialization--usage)
 - [Strict Terms of Use & Copyright Notice](#-strict-terms-of-use--copyright-notice)
-- [Credits](#-credits)
+- [Credits & Metadata](#-credits--metadata)
 
 ---
 
@@ -39,23 +39,22 @@ NetConV1/
 
 <img width="421" height="299" alt="folder-layout" src="https://github.com/user-attachments/assets/aff83289-a3d0-4b75-84df-32d95c783fe5" />
 
+---
 
-📦 Installation Guide
-Import the official NetConV1 model package into your Roblox Studio place file.
+## 📦 Installation Guide
+* Import the official NetConV1 model package into your Roblox Studio place file.
+* Verify that the folder structures are placed precisely in their required locations:
+  * Shared/Client modules must reside inside `ReplicatedStorage`.
+  * Server-side core modules must reside inside `ServerScriptService`.
+* Ensure no component files or identification lines are altered or deleted during placement.
 
-Verify that the folder structures are placed precisely in their required locations:
+---
 
-Shared/Client modules must reside inside ReplicatedStorage.
+## 🚀 Initialization & Usage
 
-Server-side core modules must reside inside ServerScriptService.
+### 1. Server Initialization
 
-Ensure no component files or identification lines are altered or deleted during placement.
-
-🚀 Initialization & Usage
-1. Server Initialization
-In a standard Script inside ServerScriptService, initialize the server module upon startup:
-
-Lua
+In a standard Script inside `ServerScriptService`, initialize the server module upon startup:
 local NetConServer = require(script.Parent.NetCon.NetConServer)
 NetConServer.Init()
 2. Client Initialization
