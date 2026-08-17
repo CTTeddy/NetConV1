@@ -27,6 +27,7 @@ function NetCon.Init()
 	local success, gameName = pcall(function()
 		return MarketplaceService:GetProductInfo(game.PlaceId).Name
 	end)
+	
 	local targetName = success and gameName or "Unknown Game"
 
 	local remote = ReplicatedStorage:WaitForChild("NetCon"):WaitForChild("Shared"):WaitForChild(REMOTE_NAME, 10)
