@@ -58,7 +58,7 @@ Place inside a LocalScript in StarterPlayerScripts or StarterCharacterScripts:
 local NetCon = require(game:GetService("ReplicatedStorage").NetCon.Shared.NetCon)
 NetCon.Init()
 
-⚖️ Strict Terms of Use & Copyright Notice
+## ⚖️ Strict Terms of Use & Copyright Notice
 By accessing, downloading, integrating, or utilizing NetCon v1, you agree to the following legally binding terms:
 
 All Rights Reserved: Exclusive intellectual property of the developer.
@@ -71,7 +71,7 @@ Strict Anti-Redistribution & Anti-Monetization Policy: Redistribution, resale, o
 
 Enforcement & Legal Action: Unauthorized use will result in DMCA takedowns and formal legal action.
 
-👥 Credits & Metadata
+## 👥 Credits & Metadata
 Developer: CTTeddy
 
 Project: NetCon v1 Network & Communication System
