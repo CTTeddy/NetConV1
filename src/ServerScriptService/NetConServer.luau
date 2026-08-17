@@ -2,10 +2,10 @@ local NetConServer = {}
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 local MarketplaceService = game:GetService("MarketplaceService")
+local Players = game:GetService("Players")
 
 local REMOTE_NAME = "NetConMainChannel"
 local Actions = {}
-
 local Cooldowns = {}
 local SPAM_LIMIT = 15
 local WINDOW_SIZE = 1
@@ -63,6 +63,10 @@ function NetConServer.Init()
 	end)
 	local targetName = success and gameName or "Unknown Game"
 	warn("NetCon v1 By CTTeddy Running on " .. targetName)
+
+	Players.PlayerRemoving:Connect(function(player)
+		Cooldowns[player.UserId] = nil
+	end)
 
 	remote.OnServerEvent:Connect(function(player, actionName, data)
 		if type(actionName) ~= "string" then return end
