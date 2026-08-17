@@ -1,4 +1,3 @@
-Markdown
 # NetCon v1 - Centralized Communication Infrastructure
 
 > **A lightweight, secure, and high-performance Remote Event management system engineered specifically for professional Roblox projects.**
@@ -40,6 +39,9 @@ NetConV1/
 └── ServerScriptService/
     └── NetCon/
         └── NetConServer.lua (Server-side core logic & security)
+
+<img width="421" height="299" alt="folder-layout" src="https://github.com/user-attachments/assets/1cbe985f-9eba-4587-a129-c37a85df7eca" />
+
 📦 Installation Guide
 Import the official NetConV1 model package into your Roblox Studio place file.
 
