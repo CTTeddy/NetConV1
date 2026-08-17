@@ -1,48 +1,43 @@
-# NetCon v1 - Centralized Communication Infrastructure
+📋 TABLE OF CONTENTS
+Overview
 
-> **A lightweight, secure, and high-performance Remote Event management system engineered specifically for professional Roblox projects.**
+Key Features
 
----
+System Architecture
 
-## 📋 Table of Contents
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [System Architecture](#-system-architecture)
-- [Installation Guide](#-installation-guide)
-- [Initialization & Usage](#-initialization--usage)
-- [Strict Terms of Use & Copyright Notice](#-strict-terms-of-use--copyright-notice)
-- [Credits](#-credits)
+Installation Guide
 
----
+Initialization & Usage
 
-## 🌟 Overview
-**NetCon v1** is designed to eliminate the chaos of managing multiple scattered RemoteEvents and RemoteFunctions across Roblox experiences. By utilizing a centralized single-channel architecture (`NetConMainChannel`), it drastically reduces network overhead, prevents client-side exploitation vectors, and simplifies data flow between the server and clients.
+Strict Terms of Use & Copyright Notice
 
----
+Credits
 
-## ⚙️ Key Features
-* **Single-Channel Architecture:** All communication streams flow through a single optimized main channel (`NetConMainChannel`), preventing RemoteEvent clutter and namespace pollution in `ReplicatedStorage`.
-* **Server-Authoritative Security:** All core business logic and execution handlers reside strictly within `ServerScriptService`, ensuring malicious clients cannot inspect, temper with, or exploit core network logic.
-* **Built-in Anti-Spam & Rate Limiting:** Features an integrated throttling mechanism that monitors and blocks excessive requests per client, protecting the server against spam abuse and denial-of-service attempts.
-* **Modular Integration:** Designed with clean, decoupled modules that can be seamlessly plugged into any existing codebase or framework structure.
-* **Mandatory Startup Verification:** Enforces a rigid startup signature check to verify authenticity and prevent unauthorized code stripping.
+🌟 OVERVIEW
+NetCon v1 is designed to eliminate the chaos of managing multiple scattered RemoteEvents and RemoteFunctions across Roblox experiences. By utilizing a centralized single-channel architecture (NetConMainChannel), it drastically reduces network overhead, prevents client-side exploitation vectors, and simplifies data flow between the server and clients.
 
----
+⚙️ KEY FEATURES
+Single-Channel Architecture: All communication streams flow through a single optimized main channel (NetConMainChannel), preventing RemoteEvent clutter and namespace pollution in ReplicatedStorage.
 
-## 🏗️ System Architecture
+Server-Authoritative Security: All core business logic and execution handlers reside strictly within ServerScriptService, ensuring malicious clients cannot inspect, temper with, or exploit core network logic.
 
+Built-in Anti-Spam & Rate Limiting: Features an integrated throttling mechanism that monitors and blocks excessive requests per client, protecting the server against spam abuse and denial-of-service attempts.
+
+Modular Integration: Designed with clean, decoupled modules that can be seamlessly plugged into any existing codebase or framework structure.
+
+Mandatory Startup Verification: Enforces a rigid startup signature check to verify authenticity and prevent unauthorized code stripping.
+
+🏗️ SYSTEM ARCHITECTURE
 NetConV1/
 ├── ReplicatedStorage/
 │   └── NetCon/
 │       └── Shared/
 │           └── NetCon.lua (Client-side bridge)
 └── ServerScriptService/
-    └── NetCon/
-        └── NetConServer.lua (Server-side core logic & security)
+└── NetCon/
+└── NetConServer.lua (Server-side core logic & security)
 
-<img width="421" height="299" alt="folder-layout" src="https://github.com/user-attachments/assets/1cbe985f-9eba-4587-a129-c37a85df7eca" />
-
-📦 Installation Guide
+📦 INSTALLATION GUIDE
 Import the official NetConV1 model package into your Roblox Studio place file.
 
 Verify that the folder structures are placed precisely in their required locations:
@@ -53,7 +48,7 @@ Server-side core modules must reside inside ServerScriptService.
 
 Ensure no component files or identification lines are altered or deleted during placement.
 
-🚀 Initialization & Usage
+🚀 INITIALIZATION & USAGE
 1. Server Initialization
 In a standard Script inside ServerScriptService, initialize the server module upon startup:
 
@@ -66,7 +61,7 @@ In a LocalScript inside StarterPlayerScripts or StarterCharacterScripts, initial
 Lua
 local NetCon = require(game:GetService("ReplicatedStorage").NetCon.Shared.NetCon)
 NetCon.Init()
-⚖️ Strict Terms of Use & Copyright Notice
+⚖️ STRICT TERMS OF USE & COPYRIGHT NOTICE
 By accessing, downloading, integrating, or utilizing NetCon v1, you explicitly agree to the following legally binding terms:
 
 All Rights Reserved: This software, including its architecture, source code, and design patterns, is the exclusive intellectual property of the developer. All rights are strictly reserved.
@@ -79,7 +74,7 @@ Strict Anti-Redistribution & Anti-Monetization Policy: Redistributing this syste
 
 Enforcement & Legal Action: Any unauthorized code alterations, removal of identification lines, plagiarism, or illegal commercial distribution will be met with immediate DMCA takedown requests, marketplace copyright reports, and formal legal action under applicable intellectual property laws.
 
-👥 Credits & Metadata
+👥 CREDITS & METADATA
 Developer: CTTeddy
 
 Project: NetCon v1 Network & Communication System
