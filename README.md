@@ -36,6 +36,8 @@ NetConV1/
 └── NetCon/
 └── NetConServer.lua (Server-side core logic & security)
 
+<img width="421" height="299" alt="folder-layout" src="https://github.com/user-attachments/assets/aa45e889-730f-4f95-9006-bec4fe758e7e" />
+
 ---
 
 ## 📦 Installation Guide
