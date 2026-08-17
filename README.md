@@ -1,5 +1,8 @@
 # NetCon v1
 
+<img width="582" height="600" alt="netcon" src="https://github.com/user-attachments/assets/44de31c7-eafb-4d48-9ded-df2ff1d7a5dc" />
+
+
 ## 📋 Table of Contents
 - [Overview](#-overview)
 - [Key Features](#-key-features)
