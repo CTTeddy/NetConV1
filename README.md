@@ -36,6 +36,10 @@ NetConV1/
 ├── ServerScriptService/
 │   └── NetCon/
 │       └── NetConServer.lua (Server-side core logic & security)
+
+<img width="421" height="299" alt="folder-layout" src="https://github.com/user-attachments/assets/aff83289-a3d0-4b75-84df-32d95c783fe5" />
+
+
 📦 Installation Guide
 Import the official NetConV1 model package into your Roblox Studio place file.
 
